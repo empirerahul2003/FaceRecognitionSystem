@@ -99,6 +99,21 @@ FaceRecognitionSystem/
 - NumPy
 - tqdm
 
+### DeepFace
+This project uses DeepFace for face recognition. For detailed information about DeepFace:
+- [DeepFace Documentation](https://github.com/serengil/deepface/blob/master/README.md)
+
+Key DeepFace features used in this project:
+```python
+# Face Verification
+result = DeepFace.verify(img1_path = "img1.jpg", img2_path = "img2.jpg")
+
+# Face Recognition
+dfs = DeepFace.find(img_path = "img.jpg", db_path = "known_faces/")
+
+# Facial Analysis
+demographies = DeepFace.analyze(img_path = "img.jpg")
+```
 ## 🤝 Contributing
 
 1. Fork the repository
